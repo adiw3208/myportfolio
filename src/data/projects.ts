@@ -18,11 +18,22 @@ export const projects = [
         featured: true,
     },
     {
+        title: "Trading Journal",
+        subtitle: "Finance Application",
+        description:
+            "Membangun aplikasi jurnal trading untuk membantu trader mencatat dan menganalisis aktivitas trading mereka, termasuk fitur pencatatan transaksi, analisis performa, dan visualisasi data.",
+        image: "/tradingjuournal.png",
+        tags: ["Finance", "Trading", "Data Analysis"],
+        link: "https://adiw3208.github.io/TradingJourney/",
+        github: "https://github.com/adiw3208/TradingJourney.git",
+        featured: true,
+    },
+    {
         title: "Second Hand",
         subtitle: "E-Commerce Platform",
         description:
             "Membangun platform e-commerce barang bekas menggunakan React.js dan Express.js dalam program MSIB (Kampus Merdeka). Bertanggung jawab atas integrasi API, manajemen state, dan fitur fungsional aplikasi.",
-        image: "",
+        image: null,
         tags: [
             "React.js",
             "Express.js",

@@ -89,13 +89,19 @@ function ProjectCard({
       ref={cardRef}
       className="group relative rounded-xl bg-surface-elevated border border-border overflow-hidden hover:border-border-lime transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-lime-glow/10"
     >
-      <div className="relative h-48 overflow-hidden">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+      <div className="relative h-48 overflow-hidden bg-surface">
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        ) : (
+          <div className="flex items-center justify-center h-full text-text-muted">
+            <span className="text-4xl">📁</span>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-surface-elevated via-transparent to-transparent" />
 
         {project.featured && (
